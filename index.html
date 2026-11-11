@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spec gate · Blade cooling · PhysicsX</title>
+<meta name="description" content="Unofficial concept demo: shortlist AI-predicted designs with a guaranteed false-discovery rate, inside the PhysicsX platform shell.">
+<link rel="icon" href="assets/mark.svg">
+<link rel="stylesheet" href="styles.css">
+<script>window.__errs=[];addEventListener("error",e=>__errs.push(String(e.message)));addEventListener("unhandledrejection",e=>__errs.push(String(e.reason)));</script>
+</head>
+<body>
+<div class="app">
+  <aside class="side" aria-label="Problems">
+    <a class="logo" href="#/" aria-label="PhysicsX home"><img src="assets/logo.svg" alt="PhysicsX" width="128" height="20"></a>
+    <div class="probhead"><button class="dd" type="button">Problems <i data-lucide="chevron-down"></i></button><span class="sp"></span><button class="ib" type="button" aria-label="Filter problems"><i data-lucide="list-filter"></i></button><button class="ib" type="button" aria-label="New problem"><i data-lucide="plus"></i></button></div>
+    <nav class="tree" id="tree"></nav>
+    <div class="sidelinks">
+      <a href="#/log" class="sl" data-view="log"><i data-lucide="share-2"></i>Knowledge log</a>
+      <a href="#/vault" class="sl" data-view="vault"><i data-lucide="folder"></i>Vault</a>
+    </div>
+  </aside>
+  <main class="center" id="center" aria-live="polite"><div class="boot"><div class="spin"></div>Loading campaign…</div></main>
+  <aside class="agent" id="agent" aria-label="Agent"></aside>
+</div>
+<div class="foot">Unofficial concept demo by Mohith Gajjela. Not affiliated with PhysicsX. Synthetic data from an in-browser conduction solver.</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<dialog id="dlg" aria-labelledby="dlgT"></dialog>
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>

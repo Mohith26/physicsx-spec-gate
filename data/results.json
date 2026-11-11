@@ -1,0 +1,175 @@
+{
+ "generated": "scripts/results.mjs",
+ "limit": 1590,
+ "defaultSplit": {
+  "0.02": {
+   "gate": {
+    "selected": 353,
+    "falseDiscoveries": 2,
+    "fdp": 0.0056657223796034,
+    "power": 0.39,
+    "inSpecTotal": 900
+   },
+   "naive": {
+    "selected": 926,
+    "falseDiscoveries": 129,
+    "fdp": 0.13930885529157666,
+    "power": 0.8855555555555555,
+    "inSpecTotal": 900
+   },
+   "uq": {
+    "selected": 454,
+    "falseDiscoveries": 7,
+    "fdp": 0.015418502202643172,
+    "power": 0.49666666666666665,
+    "inSpecTotal": 900
+   },
+   "scale": 0.8401533202113307,
+   "k": 353
+  },
+  "0.05": {
+   "gate": {
+    "selected": 655,
+    "falseDiscoveries": 40,
+    "fdp": 0.061068702290076333,
+    "power": 0.6833333333333333,
+    "inSpecTotal": 900
+   },
+   "naive": {
+    "selected": 926,
+    "falseDiscoveries": 129,
+    "fdp": 0.13930885529157666,
+    "power": 0.8855555555555555,
+    "inSpecTotal": 900
+   },
+   "uq": {
+    "selected": 454,
+    "falseDiscoveries": 7,
+    "fdp": 0.015418502202643172,
+    "power": 0.49666666666666665,
+    "inSpecTotal": 900
+   },
+   "scale": 0.8401533202113307,
+   "k": 655
+  },
+  "0.1": {
+   "gate": {
+    "selected": 841,
+    "falseDiscoveries": 94,
+    "fdp": 0.1117717003567182,
+    "power": 0.83,
+    "inSpecTotal": 900
+   },
+   "naive": {
+    "selected": 926,
+    "falseDiscoveries": 129,
+    "fdp": 0.13930885529157666,
+    "power": 0.8855555555555555,
+    "inSpecTotal": 900
+   },
+   "uq": {
+    "selected": 454,
+    "falseDiscoveries": 7,
+    "fdp": 0.015418502202643172,
+    "power": 0.49666666666666665,
+    "inSpecTotal": 900
+   },
+   "scale": 0.8401533202113307,
+   "k": 841
+  },
+  "0.2": {
+   "gate": {
+    "selected": 1040,
+    "falseDiscoveries": 202,
+    "fdp": 0.19423076923076923,
+    "power": 0.9311111111111111,
+    "inSpecTotal": 900
+   },
+   "naive": {
+    "selected": 926,
+    "falseDiscoveries": 129,
+    "fdp": 0.13930885529157666,
+    "power": 0.8855555555555555,
+    "inSpecTotal": 900
+   },
+   "uq": {
+    "selected": 454,
+    "falseDiscoveries": 7,
+    "fdp": 0.015418502202643172,
+    "power": 0.49666666666666665,
+    "inSpecTotal": 900
+   },
+   "scale": 0.8401533202113307,
+   "k": 1040
+  }
+ },
+ "repeated": {
+  "0.02": {
+   "splits": 300,
+   "meanFDR": 0.017334159153922685,
+   "pFdpAboveQ": 0.37,
+   "meanPower": 0.4640285988048371,
+   "meanSelected": 416.58,
+   "uqMeanFDR": 0.011465062341593682,
+   "uqMeanPower": 0.4563742491353284,
+   "naiveMeanFDR": 0.14210970437567683,
+   "naiveMeanPower": 0.8808569310928842
+  },
+  "0.05": {
+   "splits": 300,
+   "meanFDR": 0.047398651870577804,
+   "pFdpAboveQ": 0.42333333333333334,
+   "meanPower": 0.6265264340236918,
+   "meanSelected": 580.07,
+   "uqMeanFDR": 0.011465062341593682,
+   "uqMeanPower": 0.4563742491353284,
+   "naiveMeanFDR": 0.14210970437567683,
+   "naiveMeanPower": 0.8808569310928842
+  },
+  "0.1": {
+   "splits": 300,
+   "meanFDR": 0.09668427982050024,
+   "pFdpAboveQ": 0.38666666666666666,
+   "meanPower": 0.7944337104504055,
+   "meanSelected": 775.2733333333333,
+   "uqMeanFDR": 0.011465062341593682,
+   "uqMeanPower": 0.4563742491353284,
+   "naiveMeanFDR": 0.14210970437567683,
+   "naiveMeanPower": 0.8808569310928842
+  },
+  "0.2": {
+   "splits": 300,
+   "meanFDR": 0.19595946594785954,
+   "pFdpAboveQ": 0.43333333333333335,
+   "meanPower": 0.9300175754868965,
+   "meanSelected": 1019.4266666666666,
+   "uqMeanFDR": 0.011465062341593682,
+   "uqMeanPower": 0.4563742491353284,
+   "naiveMeanFDR": 0.14210970437567683,
+   "naiveMeanPower": 0.8808569310928842
+  }
+ },
+ "headline": {
+  "candidates": 3000,
+  "calibration": 750,
+  "limitK": 1590,
+  "inSpecInPool": 900,
+  "q": 0.1,
+  "gateMeanFDRPct": 9.7,
+  "gatePowerPct": 79,
+  "naiveMeanFDRPct": 14.2,
+  "naivePowerPct": 88,
+  "uqGateMeanFDRPct": 1.1,
+  "uqGatePowerPct": 46,
+  "equalErrorQ": 0.02,
+  "gatePowerAtEqualErrorPct": 46,
+  "gateFDRAtEqualErrorPct": 1.7,
+  "defaultSplitQ10": {
+   "selected": 841,
+   "falseDiscoveries": 94,
+   "fdp": 0.1117717003567182,
+   "power": 0.83,
+   "inSpecTotal": 900
+  }
+ }
+}
