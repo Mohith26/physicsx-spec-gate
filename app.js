@@ -184,7 +184,7 @@ function jet(t) { t = Math.min(1, Math.max(0, t)); const r = Math.min(1, Math.ma
 function drawField(cv, r, mode) {
   if (!cv) return; const ctx = cv.getContext('2d'); const { w, h, X, Y } = bladeBox(cv); ctx.clearRect(0, 0, w, h);
   const { nx, ny } = r; const dx = 1 / nx, dy = 0.4 / ny;
-  let lo, hi; if (mode === 'margin') { lo = -60; hi = 60; } else { lo = Infinity; hi = -Infinity; r.field.forEach(v => { if (!Number.isNaN(v)) { lo = Math.min(lo, v); hi = Math.max(hi, v); } }); }
+  let lo, hi; if (mode === 'margin') { lo = -60; hi = 60; } else { lo = Infinity; hi = -Infinity; r.field.forEach((v, c) => { if (!Number.isNaN(v) && ((c % nx) + 0.5) * dx <= S.D.blade.xEval) { lo = Math.min(lo, v); hi = Math.max(hi, v); } }); }
   for (let j = 0; j < ny; j++) for (let i2 = 0; i2 < nx; i2++) {
     const v = r.field[j * nx + i2]; if (Number.isNaN(v)) continue;
     const val = mode === 'margin' ? v - S.L : v; const [R, G, B] = jet((val - lo) / (hi - lo));
